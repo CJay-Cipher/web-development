@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <title>My First Webpage</title>
-    </head>
+<html lang="en">
+    
+    <title>My First Webpage</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon3.ico">
 
-    <body>
+    <body style="background-color: lightskyblue;">
         <!-- This is a comment for heading -->
         <h1>Hello World!</h1>
         <h2>This is my first webpage in heading 2 - h2</h2>
@@ -43,8 +43,26 @@
                 </ol>
         </ul>
 
-        <!-- IMAGE -->
-        <!-- local images -->
+        <!-- FORMATTING ---------------------------------------- -->
+        <h3>FORMATTING</h2>
+        <ul>
+            <li><b>This is a bold text</b></li>
+            <li><strong>This is an Important text using the strong element</strong></li>
+            <li><i>Italic text</i></li>
+            <li><em>Emphasized text - more importance than Italic</em></li>
+            <li><mark>Marked text</mark></li>
+            <li><small>small text</small></li>
+            <li><del>Deleted text</del></li>
+            <li><mark>Marked text</mark></li>
+            <li>X<sub>Subscrip text</sub></li>
+            <li>X<sup>Superscrip text</sup></li>
+
+
+        </ul>
+        
+
+        <!-- IMAGE ---------------------------------------- -->
+        <!-- Relative/local images -->
         <ul>
             <li>
             First Image<br>
@@ -53,9 +71,9 @@
                 width="300" 
                 height="300" 
                 alt=" -broken image"
-            />  
+            >  
             </li><br> 
-            <!-- Remote Images -->
+            <!-- Absolute/Remote Images -->
             <li>
             Second Image<br>
             <img
@@ -63,11 +81,11 @@
                 width="300" 
                 height="300" 
                 alt=" -broken image"
-            />
+            >
             </li>
         </ul>
 
-        <!-- USING Links & Hyperlinks-->
+        <!-- USING Links & Hyperlinks ------------------------------------------>
         <!-- links -->
         <p>Click here to go to google >> 
             <a href="https://www.google.com"> Google</a>
@@ -78,5 +96,57 @@
 
         <p>Click <a href="registration_page.html">Here</a> to register an account with us </p>
         
+        <!-- using VIDEO AND AUDIO ---------------------------------------- -->
+        <style>
+            video {
+                width: 300px;
+            }
+        </style>
+        
+        <audio controls src="assets/town-10169.mp3"></audio><br>
+        <video controls src="assets/20770858-hd_1080_1920_30fps.mp4"></video>
+
+        <!-- STYLE -->
+        <!-- Background Color -->
+        <h1 style="background-color:blueviolet;">This is a heading</h1>
+        <p style="background-color:#FF6347;">This is a paragraph</p>
+
+        <!-- Text Color -->
+        <h2 style="color:blue;">This is a heading</h2>
+        <p style="color:red;">This is another paragraph</p>
+
+        <!-- Fonts -->
+        <h2 style="font-family:Courier New;">This is a new font style</h2>
+        <p style="font-family:monospace;">This a different font style paragraph</p>
+
+        <!-- Text Size -->
+        <h1 style="font-size:220%;">This is a heading with a different size</h1>
+        <p style="font-size:110%;">This a new paragraph</p>
+
+        <!-- Text Alignment -->
+        <h3 style="text-align:center;">A Centered Heading</h3>
+        <p style="text-align:center;">This is a Centered Paragraph</p>
+        
+        <!-- Border Color -->
+        <h1 style="border: 2px solid DodgerBlue;">A text with a border color</h1>
+
+        <!-- Different Style conbination -->
+        <p 
+            style="text-align:center;">This is a 
+            <span style="font-size:120%; color:red;">Special </span>
+            <span style="color:blueviolet; font-size:150%;">Style</span> sample
+        </p>
+
+        <h1 
+            style="border: 50px solid #f562cb; 
+            background-color:#f562cb; 
+            text-align:center; 
+            font-family:monospace; 
+            font-size:350%;">Hi, I'm CJay
+        </h1>
+        
+        
+
+
     </body>
 </html>
