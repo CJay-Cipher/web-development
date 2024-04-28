@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My HTML Tutorial</title>
+    <style>
+        body {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 300%;
+            letter-spacing: 7px;
+            text-align: center;
+        }
+        h2 {
+            color: #00bfff; 
+            font-family: calibri;
+        }
+        h3 {
+            color: black; 
+            font-family: calibri; 
+            /* text-align: center; */
+        }
+        p {
+            color: white; 
+            font-family: calibri;
+            font-size: 20px;
+        }
+        a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body style="background-color: black; font-family: comic, sans-serif;">
+    <h1 style="background-color: #00bfff;
+    padding: 50px; margin-bottom: 0; border-radius: 50px;">My Html CSS Tutorial</h1>
+
+    <!-- <h3 style="background-color: #044d66;
+    border: 20px solid #044d66;
+    font-size: 150%; margin-top: 10px;
+    border-radius: 30px;
+    text-align: right;"><span style="text-align: left;">About</span>
+    <a href="https://github.com/CJay-Cipher" target="_blank">
+        <img src="images/icons/github-48.png" alt="My Github" style="width: 40px; height: 40px;">
+    </a>
+    <a href="https://linkedin.com/in/your-profile" target="_blank">
+        <img src="images/icons/linkedin-50.png" alt="My LinkedIn" style="width: 40px; height: 40px;">
+    </a>
+
+    </h3> -->
+
+    <h3 style="background-color: #044d66;
+    border: 20px solid #044d66;
+    font-size: 150%;
+    margin-top: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;">
+    <span>
+        <a href="registration_page.html">Register</a>
+        <a href="about.html">About</a>
+    </span>
+    <div>
+        <a href="https://github.com/CJay-Cipher" target="_blank">
+            <img src="images/icons/github-48.png" alt="My Github" style="width: 40px; height: 40px;">
+        </a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank">
+            <img src="images/icons/linkedin-50.png" alt="My LinkedIn" style="width: 40px; height: 40px;">
+        </a>
+    </div>
+    </h3>
+
+    <p style="text-align: center;
+    font-size: 35px;
+    color: #00bfff;">This is about internal and external CSS</p>
+
+    <h2 style="margin-bottom: 0;">Internal CSS</h2>
+    <p style="margin-top: 0;">Internal CSS refers to defining CSS styles directly within the HTML file using the <strong>&lt;style&gt;</strong> tag. The CSS rules specified within the <strong>&lt;style&gt;</strong> tag apply only to the HTML document in which they are defined. This method allows you to have the CSS styles embedded within the HTML file itself. Internal CSS is typically placed within the <strong>&lt;head&gt;</strong> section of the HTML document, between the <strong>&lt;style&gt;</strong> opening and closing tags.</p><br>
+    
+    <h2 style="margin-bottom: 0;">External CSS</h2>
+    <p style="margin-top: 0;">External CSS involves defining CSS styles in a separate external stylesheet file, which is then linked to the HTML document using the <strong>&lt;link&gt;</strong> tag. The external CSS file contains all the CSS rules and styles that apply to multiple HTML documents. By using external CSS, you can maintain a centralized stylesheet that can be shared across multiple HTML files, making it easier to manage and update styles across your website.</p>
+</body>
+
+</html>
