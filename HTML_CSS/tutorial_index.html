@@ -42,33 +42,22 @@
         }
 
         a:hover {
-            color: white;
+            color: #6b97a6;
             background-color: transparent;
-            text-decoration: underline;
+            text-decoration: none;
+            filter: brightness(200%);
         }
+
     </style>
 </head>
 
 <body style="background-color: black; font-family: comic, sans-serif;">
     <h1 style="background-color: #00bfff;
-    padding: 50px; margin-bottom: 0; border-radius: 50px;">My Html CSS Tutorial</h1>
-
-    <!-- <h3 style="background-color: #044d66;
-    border: 20px solid #044d66;
-    font-size: 150%; margin-top: 10px;
-    border-radius: 30px;
-    text-align: right;"><span style="text-align: left;">About</span>
-    <a href="https://github.com/CJay-Cipher" target="_blank">
-        <img src="images/icons/github-48.png" alt="My Github" style="width: 40px; height: 40px;">
-    </a>
-    <a href="https://linkedin.com/in/your-profile" target="_blank">
-        <img src="images/icons/linkedin-50.png" alt="My LinkedIn" style="width: 40px; height: 40px;">
-    </a>
-
-    </h3> -->
+    padding: 50px; margin-bottom: 0; border-radius: 50px;">My Html CSS Tutorial
+    </h1>
 
     <h3 style="background-color: #044d66;
-    border: 20px solid #044d66;
+    border: 10px solid #044d66;
     font-size: 150%;
     margin-top: 10px;
     border-radius: 30px;
@@ -76,18 +65,25 @@
     justify-content: space-between;
     align-items: center;">
     <span>
-        <a href="registration_page.html">Register</a>
-        <a href="about.html">About</a>
+        <a href="about.html" style="margin-left: 15px;"><img src="images/icons/project.png" alt="Project" style="width: 18px; height: 18px;"> Projects</a>
+        <a href="registration_page.html" style="margin-left: 30px;"><img src="images/icons/register.png" alt="Register" style="width: 18px; height: 18px;"> Register</a>
+        <a href="about.html" style="margin-left: 30px;"><img src="images/icons/contact.png" alt="Contact" style="width: 18px; height: 18px;"> Contact</a>
     </span>
+
     <div>
         <a href="https://github.com/CJay-Cipher" target="_blank">
-            <img src="images/icons/github-48.png" alt="My Github" style="width: 40px; height: 40px;">
+            <img src="images/icons/github-48.png" alt="My Github" style="width: 40px; height: 40px; margin-right: 10px;">
         </a>
         <a href="https://linkedin.com/in/your-profile" target="_blank">
-            <img src="images/icons/linkedin-50.png" alt="My LinkedIn" style="width: 40px; height: 40px;">
+            <img src="images/icons/linkedin-50.png" alt="My LinkedIn" style="width: 40px; height: 40px; margin-right: 20px;">
         </a>
     </div>
     </h3>
+    <style>
+        a img:hover {
+            filter: brightness(200%);
+        }
+    </style>
 
     <p style="text-align: center;
     font-size: 35px;
