@@ -5,9 +5,39 @@
     <title>My First Webpage</title>
     <link rel="icon" type="image/x-icon" href="images/favicons/favicon5.ico">
 
+    <style>
+        video {
+            width: 300px;
+        }
+        a:hover {
+            color: #ffffff;
+            background-color: transparent;
+            /* filter: brightness(200%); */
+        }
+        /* Define the pop effect */
+        .pop-effect {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        /* Apply the pop effect on hover */
+        .pop-effect:hover {
+            transform: scale(1.2);
+        }
+        /* Define the fade effect */
+        .fade-effect {
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        /* Apply the fade effect on hover */
+        .fade-effect:hover {
+            opacity: 0.5; /* Adjust the opacity value as needed */
+            filter: grayscale(100%) hue-rotate(120deg); /* Adds green color */
+        }
+    </style>
+
     <body style="background-color: lightskyblue;">
         <!-- This is a comment for heading -->
-        <h1>Hello World!</h1>
+        <h1 id="top_page">Hello World!</h1>
         <h2>This is my first webpage in heading 2 - h2</h2>
         <h3>This is heading three - h3</h3>
         <h4>This is heading four</h4>
@@ -15,10 +45,8 @@
         <h6>This is heading six - the smallest heading</h6>
 
         <!-- This is for paragraph -->
-        <p>This is a simple HTML test for first paragraph.</p>
-        <p>
-            Second paragraph, To test this code using the Live Server extension in Visual Studio Code
-        </p>
+        <p><a href="#register">Jump to registration link</a></p>
+        <p>Second paragraph, To test this code using the Live Server extension in Visual Studio Code</p>
 
         <!-- THIS IF FOR LIST -->
         <!-- Ordered list -->
@@ -67,11 +95,11 @@
             <li>
             First Image<br>
             <img 
-                src="images/image_one.jpg"
+                src="images/pexel_chill.jpg"
                 width="300" 
                 height="300" 
                 alt=" -broken image"
-            >  
+                class="pop-effect fade-effect">  
             </li><br> 
             <!-- Absolute/Remote Images -->
             <li>
@@ -81,11 +109,12 @@
                 width="300" 
                 height="300" 
                 alt=" -broken image"
-            >
+                class="pop-effect">
             </li>
         </ul>
 
         <!-- USING Links & Hyperlinks ------------------------------------------>
+
         <!-- links -->
         <p>Click here to go to google >> 
             <a href="https://www.google.com" target="_blank"> Google</a>
@@ -96,30 +125,25 @@
         <p><button onclick="document.location='about.html'"
         style="background-color: black; 
         color: white;
-        border-radius: 10px;"> About Me</button></p>
+        border-radius: 10px;" class="fade-effect"> About Me</button></p>
 
         <p>
             <a href="https://github.com/CJay-Cipher" target="_blank">
             <img src="images/icons/github-48.png" 
             alt="My Github"
-            style="width:40px; height:40px;"></a>
+            style="width:40px; height:40px;" class="pop-effect"></a>
 
             <a href="https://github.com/CJay-Cipher" target="_blank">
                 <img src="images/icons/linkedin-50.png" 
                 alt="My Github"
-                style="width:40px; height:40px;"></a>
+                style="width:40px; height:40px;" class="pop-effect"></a>
             
         </p>
         
 
-        <p>Click <a href="registration_page.html">Here</a> to register an account with us </p>
+        <p id="register">Click <a href="registration_page.html">Here</a> to register an account with us </p>
         
         <!-- using VIDEO AND AUDIO ---------------------------------------- -->
-        <style>
-            video {
-                width: 300px;
-            }
-        </style>
         
         <audio controls src="assets/town-10169.mp3"></audio><br>
         <video controls src="assets/20770858-hd_1080_1920_30fps.mp4"></video>
@@ -130,7 +154,7 @@
         <p style="background-color:#FF6347;">This is a paragraph</p>
 
         <!-- Text Color -->
-        <h2 style="color:blue;">This is a heading</h2>
+        <h2 style="color:blue;"><a href="#top_page">Jump back to the top</a></h2>
         <p style="color:red;">This is another paragraph</p>
 
         <!-- Fonts -->
