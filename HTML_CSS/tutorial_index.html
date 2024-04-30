@@ -5,10 +5,38 @@
     <title>My HTML Tutorial</title>
     <style>
         body {
-            margin-left: 200px;
-            margin-right: 200px;
+            margin-left: auto;
+            margin-right: auto;
         }
-
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        th {
+            font-size: large;
+            border: 1px solid #012d3b;
+            background-color: #00bfff;
+            color: #011b23;
+            text-align: center;
+            padding: 8px;
+        }
+        td {
+            border: 1px solid #011116;
+            /* color: #ffffff; */
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #04536b;
+            color: #00bfff;
+        }
+        tr:nth-child(odd) {
+            background-color: #0484a8;
+            color: #000405;
+        }
         h1 {
             color: black;
             font-size: 300%;
@@ -94,8 +122,53 @@
     
     <h2 style="margin-bottom: 0;">External CSS</h2>
     <p style="margin-top: 0;">External CSS involves defining CSS styles in a separate external stylesheet file, which is then linked to the HTML document using the <strong>&lt;link&gt;</strong> tag. The external CSS file contains all the CSS rules and styles that apply to multiple HTML documents. By using external CSS, you can maintain a centralized stylesheet that can be shared across multiple HTML files, making it easier to manage and update styles across your website.</p>
-
 </h3>
+<h2 style="text-align: center; margin-top: 50px;">HTML Table</h2>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+    <th>Company 2</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Alfreds Futterkiste</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+    <td>Centro comercial Moctezuma</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+    <td>Ernst Handel</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+    <td>Island Trading</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+    <td>Laughing Bacchus Winecellars</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+    <td>Magazzini Alimentari Riuniti</td>
+  </tr>
+</table>
 
 </body>
 
