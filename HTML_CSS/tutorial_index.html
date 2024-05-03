@@ -14,28 +14,35 @@
             width: auto;
             margin-left: auto;
             margin-right: auto;
+            /* border-radius: 10px; */
         }
         th {
             font-size: large;
-            border: 1px solid #012d3b;
+            border: 3px solid #012d3b;
             background-color: #00bfff;
             color: #011b23;
-            text-align: center;
+            /* text-align: center; */
             padding: 8px;
+            /* border-radius: 10px; */
         }
         td {
-            border: 1px solid #011116;
+            border: 2px solid #011116;
             /* color: #ffffff; */
             text-align: left;
             padding: 8px;
+            /* border-radius: 10px; */
+            border-style: solid;
         }
         tr:nth-child(even) {
-            background-color: #04536b;
-            color: #00bfff;
+            background-color: #035369;
+            color: #000405;
         }
         tr:nth-child(odd) {
             background-color: #0484a8;
             color: #000405;
+        }
+        tr:hover {
+            background-color: #00bfff;
         }
         h1 {
             color: black;
@@ -47,41 +54,68 @@
             color: #00bfff; 
             font-family: calibri;
         }
-        h3 {
-            color: black; 
-            font-family: calibri; 
-            /* text-align: center; */
-        }
+        
         p {
             color: white; 
             font-family: calibri;
             font-size: 20px;
         }
-        a:link, a:visited {
-        color: black;
-        background-color: transparent;
+        /* ul {
+            list-style-type: none;
+            padding: 10px;
+            border-radius: 30px;
+            margin: auto;
+            font-size: 110%;
+            overflow: hidden;
+            background-color: #044d66;
+        }
+        li {
+            margin-left: 30px;
+        }
+        
+        li a:hover {
+            background-color: #00bfff37;
+        } */
+        ul {
+        list-style-type: none;
+        /* margin: 50; */
+        /* padding: 10;  */
+        overflow: hidden;
+        background-color: #04718f;
+        /* border-radius: 50px; */
+        }
+
+        li a {
+        display: block;
+        text-align: center;
+        padding: 10px;
         text-decoration: none;
         }
 
-        a:hover {
-            /* color: #ffffff; */
-            background-color: transparent;
-            /* filter: brightness(200%); */
-        }
-        /* Define the pop effect */
-        .pop-effect {
-            transition: transform 0.15s ease-in-out;
-            display: inline-block;
-            border-radius: 30px;
-            padding: 2px 15px;
-            /* background-color: #00bfff; */
+        li a:hover {
+        background-color: #00bfff;
+        /* border-radius: 20px; */
         }
         
+        a:link, a:visited {
+            color: black;
+            /* background-color: #00bfff; */
+            /* background-color: white; */
+            text-decoration: none;
+        }
+
+
+        /* Define the pop effect */
+        .pop-effect {
+            transition: transform 0.3s ease-in-out;
+            display: inline-block;
+        }
+
         /* Apply the pop effect on hover */
         .pop-effect:hover {
-            transform: scale(1.2);
-            box-shadow: 0 0 20px 5px #012d3b;
+            transform: scale(1.3);
         }
+
 
     </style>
 </head>
@@ -92,7 +126,18 @@
     padding: 30px; border-radius: 50px;">My Html CSS Tutorial
     </h1>
 
-    <h3 style="background-color: #044d66;
+    <ul>
+        <li><a href="about.html" style="float: left;" class="pop-effect"><img src="images/icons/project.png" alt="Project" style="width: 20px; height: 20px; margin-top: 7px;"><b> Projects</b></a></li>
+        <li><a href="registration_page.html" style="float: left;" class="pop-effect"><img src="images/icons/register.png" alt="Register" style="width: 20px; height: 20px; margin-top: 7px;"><b> Register</b></a></li>
+        <li><a href="about.html" style="float: left;" class="pop-effect"><img src="images/icons/contact.png" alt="Contact" style="width: 20px; height: 20px; margin-top: 7px;"><b> Contact</b></a></li>
+        
+
+        <li><a href="https://github.com/CJay-Cipher" target="_blank" style="float: right;">
+            <img src="images/icons/github-48.png" alt="My Github" style="width: 30px; height: 30px;" class="pop-effect"></a></li>
+        <li><a href="https://linkedin.com/in/your-profile" target="_blank" style="float: right;">
+            <img src="images/icons/linkedin-50.png" alt="My LinkedIn" style="width: 30px; height: 30px;" class="pop-effect"></a></li>
+    </ul>
+    <!-- <h3 style="background-color: #044d66; 
     padding: 10px;
     font-size: 120%;
     border-radius: 30px;
@@ -111,7 +156,7 @@
         <a href="https://linkedin.com/in/your-profile" target="_blank">
             <img src="images/icons/linkedin-50.png" alt="My LinkedIn" style="width: 30px; height: 30px;" class="pop-effect"></a>
     </div>
-    </h3>
+    </h3> -->
 
     <p style="text-align: center;
     font-size: 35px;
@@ -123,46 +168,75 @@
     <h2 style="margin-bottom: 0;">External CSS</h2>
     <p style="margin-top: 0;">External CSS involves defining CSS styles in a separate external stylesheet file, which is then linked to the HTML document using the <strong>&lt;link&gt;</strong> tag. The external CSS file contains all the CSS rules and styles that apply to multiple HTML documents. By using external CSS, you can maintain a centralized stylesheet that can be shared across multiple HTML files, making it easier to manage and update styles across your website.</p>
 </h3>
-<h2 style="text-align: center; margin-top: 50px;">HTML Table</h2>
+
 
 <table>
+    <caption style="font-size: larger; color: #00bfff; margin-top: 30px;"><b>Using HTML Table</b></caption>
   <tr>
+    <th>NO.</th>
     <th>Company</th>
     <th>Contact</th>
     <th>Country</th>
     <th>Company 2</th>
   </tr>
   <tr>
+    <td>1</td>
     <td>Alfreds Futterkiste</td>
     <td>Maria Anders</td>
     <td>Germany</td>
     <td>Alfreds Futterkiste</td>
   </tr>
   <tr>
+    <td>2</td>
     <td>Centro comercial Moctezuma</td>
     <td>Francisco Chang</td>
     <td>Mexico</td>
     <td>Centro comercial Moctezuma</td>
   </tr>
   <tr>
+    <td>3</td>
     <td>Ernst Handel</td>
     <td>Roland Mendel</td>
     <td>Austria</td>
     <td>Ernst Handel</td>
   </tr>
   <tr>
+    <td>4</td>
     <td>Island Trading</td>
     <td>Helen Bennett</td>
     <td>UK</td>
     <td>Island Trading</td>
   </tr>
   <tr>
+    <td>5</td>
     <td>Laughing Bacchus Winecellars</td>
     <td>Yoshi Tannamuri</td>
     <td>Canada</td>
     <td>Laughing Bacchus Winecellars</td>
   </tr>
   <tr>
+    <td>6</td>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+    <td>Magazzini Alimentari Riuniti</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+    <td>Island Trading</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+    <td>Laughing Bacchus Winecellars</td>
+  </tr>
+  <tr>
+    <td>9</td>
     <td>Magazzini Alimentari Riuniti</td>
     <td>Giovanni Rovelli</td>
     <td>Italy</td>
