@@ -1,0 +1,96 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    /* border-radius: 10px; */
+}
+th {
+    font-size: large;
+    border: 3px solid #012d3b;
+    background-color: #00bfff;
+    color: #011b23;
+    /* text-align: center; */
+    padding: 8px;
+    /* border-radius: 10px; */
+}
+td {
+    border: 2px solid #011116;
+    /* color: #ffffff; */
+    text-align: left;
+    padding: 8px;
+    /* border-radius: 10px; */
+    border-style: solid;
+}
+tr:nth-child(even) {
+    background-color: #035369;
+    color: #000405;
+}
+tr:nth-child(odd) {
+    background-color: #0484a8;
+    color: #000405;
+}
+tr:hover {
+    background-color: #00bfff;
+}
+h1 {
+    color: black;
+    font-size: 300%;
+    letter-spacing: 5px;
+    text-align: center;
+}
+h2 {
+    color: #00bfff; 
+    font-family: calibri;
+}
+
+p {
+    color: white; 
+    font-family: calibri;
+    font-size: 20px;
+}
+
+ul {
+    font-size: 20px;
+    list-style-type: none;
+    /* margin: 50; */
+    /* padding: 10;  */
+    overflow: hidden;
+    background-color: #04718f;
+    border-bottom: 10px solid #034458;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #0495bd;
+    /* border-radius: 20px; */
+}
+a:link, a:visited {
+    color: black;
+    /* background-color: #00bfff; */
+    /* background-color: white; */
+    text-decoration: none;
+}
+
+/* Define the pop effect */
+.pop-effect {
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+}
+
+/* Apply the pop effect on hover */
+.pop-effect:hover {
+    transform: scale(1.15);
+}
